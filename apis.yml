@@ -1,8 +1,32 @@
 aid: milaboratories
 name: Milaboratories
-description: Milaboratories is a company surfaced as a portfolio company of speedinvest and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  MiLaboratories builds best-in-class software for immunological and genomic
+  data analysis. Its flagship product, MiXCR, is the gold-standard command-line
+  platform for analysis of Next-Generation Sequencing (NGS) data for immune
+  profiling — extracting T-cell receptor (TCR) and immunoglobulin (IG/antibody)
+  repertoires from raw sequencing reads through alignment, clonotype assembly,
+  and export — and is used widely across pharma R&D for vaccine development,
+  CAR-T therapy, and antibody discovery. The company also builds Platforma.bio,
+  a UI-first, no-code computational-biology platform for NGS data whose
+  interactive blocks are built with the TypeScript Platforma SDK over the
+  Platform API. MiLaboratories offers its software free for academic and
+  non-commercial use with commercial licensing for industry. This profile was
+  surfaced as a portfolio company of Speedinvest and enriched by the API
+  Evangelist pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/milaboratories/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/3786575?v=4
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,12 +35,62 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Bioinformatics
+- Genomics
+- Immunology
+- NGS
+- SDK
+- CLI
+- Life Sciences
+- Computational Biology
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/milaboratories-domain-security.yml
+- type: Website
+  url: https://milaboratories.com/
+- type: DeveloperPortal
+  url: https://platforma.bio/
+- type: Documentation
+  url: https://docs.platforma.bio/
+- type: APIReference
+  url: https://mixcr.com/mixcr/reference/
+- type: GettingStarted
+  url: https://docs.platforma.bio/
+- type: SDK
+  url: https://docs.platforma.bio/sdk/
+- type: GitHubOrganization
+  url: https://github.com/milaboratory
+- type: Blog
+  url: https://blog.platforma.bio/
+- type: Support
+  url: https://mixcr.com/mixcr/getting-started/support/
+- type: SignUp
+  url: https://platforma.bio/getlicense
+- type: Pricing
+  url: https://platforma.bio/getlicense
+- type: Download
+  url: https://platforma.bio/downloads
+- type: Packages
+  url: packages/milaboratories-packages.yml
+- type: SDKs
+  url: packages/milaboratories-packages.yml
+- type: CLI
+  url: cli/milaboratories-cli.yml
+- type: ChangeLog
+  url: changelog/milaboratories-changelog.yml
+- type: LLMsTxt
+  url: llms/milaboratories-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
