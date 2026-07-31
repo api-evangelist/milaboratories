@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/milaboratory/mixcr/releases
+subject: MiXCR
+scheme: semver
+docs: https://mixcr.com/mixcr/about/whats-new/
+notes: >-
+  MiXCR publishes dated, tagged releases on GitHub. Recent tagged releases are
+  captured below (recent window; the live GitHub releases page is the source of
+  truth). Platforma SDK packages version independently on npm (see packages/).
+entries:
+  - version: v4.7.0
+    date: '2024-08-07'
+  - version: v4.6.0
+    date: '2023-12-09'
+  - version: v4.5.0
+    date: '2023-09-22'
+  - version: v4.4.2
+    date: '2023-07-30'
+  - version: v4.4.1
+    date: '2023-07-06'
+  - version: v4.4.0
+    date: '2023-07-05'

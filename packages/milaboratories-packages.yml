@@ -1,0 +1,59 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/org/platforma-sdk
+notes: >-
+  MiLaboratories ships its developer surface as the Platforma SDK (a
+  TypeScript/JavaScript toolchain for building interactive Platforma blocks over
+  the Platform API) plus MiXCR, a command-line immune-repertoire analyzer. The
+  npm packages below are first-party, published under the @milaboratories and
+  @platforma-sdk scopes. MiXCR itself is distributed as a JVM binary and Docker
+  image via GitHub releases (catalogued as the CLI in cli/).
+packages:
+  - language: javascript
+    registry: npm
+    name: "@milaboratories/pl-client"
+    url: https://www.npmjs.com/package/@milaboratories/pl-client
+    install: npm install @milaboratories/pl-client
+    version: 3.14.3
+    description: New TS/JS client for the Platforma Platform API.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@platforma-sdk/model"
+    url: https://www.npmjs.com/package/@platforma-sdk/model
+    install: npm install @platforma-sdk/model
+    version: 1.80.8
+    description: Platforma.bio SDK block model (the Model in the Workflow + Model + UI triad).
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@platforma-sdk/ui-vue"
+    url: https://www.npmjs.com/package/@platforma-sdk/ui-vue
+    install: npm install @platforma-sdk/ui-vue
+    version: 1.80.9
+    description: Primary dependency for the UI component of a Platforma block (Vue).
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@platforma-sdk/workflow-tengo"
+    url: https://www.npmjs.com/package/@platforma-sdk/workflow-tengo
+    install: npm install @platforma-sdk/workflow-tengo
+    version: 6.8.2
+    description: Tengo SDK library for authoring Platforma block workflows.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@platforma-sdk/tengo-builder"
+    url: https://www.npmjs.com/package/@platforma-sdk/tengo-builder
+    install: npm install @platforma-sdk/tengo-builder
+    version: 4.0.19
+    description: Platforma Tengo template builder.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@milaboratories/pl-model-common"
+    url: https://www.npmjs.com/package/@milaboratories/pl-model-common
+    install: npm install @milaboratories/pl-model-common
+    version: 1.47.2
+    description: Common model types shared across the Platforma SDK.
+    official: true

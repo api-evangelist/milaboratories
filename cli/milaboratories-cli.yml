@@ -1,0 +1,79 @@
+generated: '2026-07-20'
+method: searched
+source: https://mixcr.com/mixcr/reference/
+name: MiXCR
+description: >-
+  MiXCR is MiLaboratories' command-line software platform for analysis of
+  Next-Generation Sequencing (NGS) data for immune profiling — T-cell receptor
+  (TCR) and immunoglobulin (IG / antibody) repertoire sequencing. It runs as a
+  JVM command-line tool that takes raw FASTQ through alignment, clonotype
+  assembly, and export.
+docs: https://mixcr.com/mixcr/reference/
+install:
+  - method: binary
+    detail: Binary distributions (zip) from GitHub releases.
+    url: https://github.com/milaboratory/mixcr/releases
+  - method: docker
+    detail: Official Docker image.
+    url: https://mixcr.com/
+license_note: >-
+  Free for academic / non-commercial use; a commercial license is required for
+  industry use (https://licensing.milaboratories.com).
+commands:
+  - name: analyze
+    group: pipeline
+    description: Run a complete upstream analysis pipeline (align + assemble + export) from a preset.
+    docs: https://mixcr.com/mixcr/reference/mixcr-analyze/
+  - name: align
+    group: pipeline
+    description: Align raw sequencing reads (FASTQ/FASTA/BAM/SAM) to reference V/D/J/C libraries.
+    docs: https://mixcr.com/mixcr/reference/mixcr-align/
+  - name: assemble
+    group: pipeline
+    description: Assemble clonotypes from alignments into a compressed .clns / .clna file.
+    docs: https://mixcr.com/mixcr/reference/mixcr-assemble/
+  - name: assemblePartial
+    group: pipeline
+    description: Assemble partially-overlapping alignments.
+  - name: assembleContigs
+    group: pipeline
+    description: Assemble full receptor contigs from clonotype alignments.
+  - name: extend
+    group: pipeline
+    description: Impute germline sequences to extend incomplete alignments.
+  - name: exportClones
+    group: export
+    description: Export clonotype tables to tab-delimited files.
+    docs: https://mixcr.com/mixcr/reference/mixcr-export/
+  - name: exportClonesPretty
+    group: export
+    description: Export clonotypes in human-readable form.
+  - name: exportAlignments
+    group: export
+    description: Export alignment tables.
+  - name: exportAirr
+    group: export
+    description: Export results in AIRR-community (rearrangement) TSV format.
+  - name: exportQc
+    group: export
+    description: Export quality-control reports.
+  - name: exportPlots
+    group: export
+    description: Export publication-ready plots.
+  - name: findAlleles
+    group: analysis
+    description: Infer individual germline alleles across a dataset.
+  - name: findShmTrees
+    group: analysis
+    description: Reconstruct somatic hypermutation (SHM) lineage trees.
+  - name: downsample
+    group: analysis
+    description: Downsample datasets for normalized comparison.
+  - name: qc
+    group: analysis
+    description: Run quality-control checks on results.
+key_flows:
+  - name: FASTQ to clonotype table
+    steps: [align, assemble, exportClones]
+  - name: One-shot preset analysis
+    steps: [analyze]
